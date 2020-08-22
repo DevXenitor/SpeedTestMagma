@@ -1,0 +1,14 @@
+use magma
+
+delete words from dbo.words
+where len(word) <=2
+
+delete words from words
+where word like '% %'
+
+delete words from dbo.words
+where len(word) >= 12
+
+update words
+set word = 'mekan'
+where word like '%â%'
